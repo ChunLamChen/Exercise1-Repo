@@ -5,43 +5,40 @@
 
 /**
  *
- * @author clchen
+ * @author user
  */
 import java.util.Scanner;
+
 public class UniversityStudentProfile {
-    public static void main(String[] args) {    
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-         System.out.print("Enter Student Name: ");
-        String StudentName = scanner.next();
-        
-         System.out.print("Enter Student Number: ");
-        String StudentNumber = scanner.nextLine();
-        
-        System.out.print("Enter Student Program: ");
-        String StudentProgram = scanner.nextLine();
-
-        // Taking input of different data types
-        System.out.print("Enter Student Year Level: ");
-        int StudentYear = scanner.nextInt();
-
-        System.out.print("Enter Student GPA: ");
-        double StudentGPA = scanner.nextDouble();
-
-       
-
-       
-
-        // Displaying the input values
-        System.out.println("You entered:");
-        System.out.println("Student Name : " + StudentName);
-        System.out.println("Student Number: " + StudentNumber );
-        System.out.println("Student Program : " + StudentProgram );
-        System.out.println("Student Year: " + StudentYear );
-        System.out.println("Student GPA: " + StudentGPA );
-
-        // Closing the scanner
-        scanner.close();
       
-    }    
+        System.out.print("Enter full name: ");
+        String fullName = scanner.nextLine();
+
+        System.out.print("Enter student number: ");
+        String studentNumber = scanner.nextLine();
+
+        System.out.print("Enter program: ");
+        String program = scanner.nextLine();
+
+        System.out.print("Enter year level: ");
+        int yearLevel = scanner.nextInt();
+
+        System.out.print("Enter GPA: ");
+        double gpa = scanner.nextDouble();
+
+      
+        System.out.println("\n--- Student Profile ---");
+        System.out.println("Name: " + fullName);
+        System.out.println("Student Number: " + studentNumber);
+        System.out.println("Program: " + program);
+        System.out.println("Year Level: " + yearLevel);
+        System.out.println("GPA: " + gpa);
+
+       
+
+        scanner.close();
+    }
 }
